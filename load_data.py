@@ -86,7 +86,7 @@ def read_protein_sequences_from_txt(file_path):
                     if sequence:
                         sequences.append(sequence)
                         sequence = ''
-                    if 'Pos' in line:
+                    if 'pos' in line.lower():
                         labels.append(1)
                     else:
                         labels.append(0)
