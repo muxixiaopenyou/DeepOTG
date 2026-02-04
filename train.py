@@ -33,6 +33,15 @@ logging.basicConfig(
 )
 logger = logging.getLogger()
 
+def set_seed(seed=0):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+
 def calculate_metrics(y_true, y_pred, y_prob):
     tn, fp, fn, tp = confusion_matrix(y_true, y_pred).ravel()
     
@@ -63,6 +72,8 @@ def calculate_metrics(y_true, y_pred, y_prob):
         'AUC': roc_auc,
         'AUCPR': pr_auc
     }
+
+set_seed(0)
 
 # PSSM and one-hot features
 sequence_file = "./data/train.txt"
