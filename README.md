@@ -48,8 +48,8 @@ Run `python generate_esm_features.py` to generate ESM features, and the PSSM fil
 As the code assumes, the structure should be: 
 
 - **Sequence File** (`data/train.txt` or similar): Must be in FASTA format.
-  - The header line must contain **"pos"** to be recognized as a positive sample.
-  - Any header **without** "pos" will be treated as a negative sample.
+  - The header line must contain **"pos"** (case insensitive) to be recognized as a positive sample.
+  - Any header without "pos" will be treated as a negative sample.
   ```text
   >SequenceID|Label
   STGQA...
