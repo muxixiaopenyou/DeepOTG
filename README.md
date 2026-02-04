@@ -24,7 +24,7 @@ conda activate DeepOTG
 
 2.Install the environment:
 ```
-pip install numpy==2.1.3 pandas==2.3.1 torch==2.5.1 transformers
+pip install numpy==2.1.3 pandas==2.3.1 scikit-learn==1.6.1 torch==2.5.1 transformers
 ```
 
 ## Usage
