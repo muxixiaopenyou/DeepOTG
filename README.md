@@ -41,9 +41,7 @@ python validate.py
 ```
 
 ### 2.To run our model on external datasets:
-Generate PSSM and ESM features first:
-
-As the code assumes, the structure should be: 
+PSSM and ESM features should be generated first.
 
 - **Sequence File**:
   - The input sequence file (e.g.,`data/train.txt`) must be in FASTA format.
