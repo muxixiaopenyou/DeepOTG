@@ -16,13 +16,13 @@ DeepOTG/
 ```
 
 ## Installation Guide
-1.Create a conda environment and activate it:
+1. Create a conda environment and activate it:
 ```
 conda create -n DeepOTG python==3.12.3
 conda activate DeepOTG
 ```
 
-2.Install the environment:
+2. Install the environment:
 ```bash
 conda install -c pytorch -c conda-forge pytorch==2.5.1 torchvision torchaudio numpy==2.1.3 pandas==2.3.1 scikit-learn==1.6.1 transformers
 ```
@@ -35,12 +35,12 @@ tar -xvf balanced.tar
 tar -xvf imbalanced.tar
 ```
 
-### 1.To validate our results:
+### 1. To validate our results:
 ```
 python validate.py
 ```
 
-### 2.To run our model on external datasets:
+### 2. To run our model on external datasets:
 PSSM and ESM features should be generated first.
 
 - **Sequence File**:
@@ -68,7 +68,7 @@ python evaluate.py
 ```
 
 
-### 3.To train your models:
+### 3. To train your models:
 Ensure your data is prepared in `data/train.txt`, ESM features are in `data/train_esm.txt`, and PSSM files are in `db/train/pssm`.
 
 ```
