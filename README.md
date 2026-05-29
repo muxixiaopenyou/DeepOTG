@@ -1,4 +1,4 @@
-# DeepOTG
+# DeepOTG: An Effective Deep Learning Framework for Identifying Human Protein O-Linked Threonine Glycosylation Sites via Attention-Based Information Bottleneck
 
 The structure of this project is:
 ```text
